@@ -2,15 +2,33 @@ $(document).ready(function() {
     $("#formOne").submit(function(event) {
       alert("Submission successful!");
       event.preventDefault();
-      var organizationSizeInput = $("#1Q").val();
-      //alert(organizationSizeInput);
-      var outsideAgencyInput = $("#2Q").val();
-      //alert(outsideAgencyInput);
-      var whichEndInput = $("#3Q").val();
-      //alert(whichEndInput);
-      var androidVsWindows = $("#4Q").val();
-      //alert(androidVsWindows);
-      var artyVsLogicInput = $("input:radio[name=arty]:checked").val();
+      organizationSizeInput = $("#1Q").val();
+    });
+
+    $("#formTwo").submit(function(event) {
+      alert("Submission successful!");
+      event.preventDefault();
+      outsideAgencyInput = $("#2Q").val();
+    });
+
+    $("#formThree").submit(function(event) {
+      alert("Submission successful!");
+      event.preventDefault();
+      whichEndInput = $("#3Q").val();
+    });
+
+    $("#formFour").submit(function(event) {
+      alert("Submission successful!");
+      event.preventDefault();
+      androidVsWindows = $("#4Q").val();
+    });
+
+    $("#formFour").submit(function(event) {
+      alert("Submission successful!");
+      event.preventDefault();
+      artyVsLogicInput = $("input:radio[name=arty]:checked").val();
+
+
       //alert(artyVsLogicInput);
 
       // var thisVar = parseInt($("input:radio[name=orgsize]:checked").val());
@@ -37,8 +55,6 @@ $(document).ready(function() {
           $('.cDiv').show();
           return
         }
-
-      }
-
+      } //This ends the else attached to the first if statement
     });
 });

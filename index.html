@@ -12,7 +12,6 @@
     <div class="container">
 
 
-      <img id="flagactivate" src="img/flag.svg"/>
       <h1>Which programming course is right fir you?</h1>
       <h4>Here are some options for programming courses that you can take:</h4>
       <ul id="thelist">
@@ -23,7 +22,7 @@
       </ul>
       <p>It is important to remember that there is no right or wrong choice when it comes to programming languages.  Each one has its own strengths and weaknesses.</p>
 
-      <div class="wholeForm">
+      <div class="wholeForm FormHide1">
         <form id="formOne">
           <div id="1Question" class="question">
             <h4>Do you prefer to work with small or large business organizations?</h4>
@@ -34,18 +33,30 @@
             </select>
           </div>
           <!-- Ends the first question div. -->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <!-- Ends the div containing the entire form. -->
 
+      <div class="wholeForm FormHide2">
+        <form id="formTwo">
           <div id="2Question" class="question">
             <h4>Do you prefer to work for a large organization directly, or work as an outside contractor?</h4>
             <p>Working directly for a large organization will once again offer far more structure, stability and usually a very steady stream of work.  Working as an outside contractor or for an agency will allow you more freedom to choose which projects you will work on and may offer better pay, if less consistently.</p>
             <select class="form-control" id="2Q">
               <option value="0">I prefer to work as an outside contractor or for an agency.</option>
               <option value="1">I prefer to work directly for companies.</option>
-
             </select>
           </div>
           <!-- Ends the second question div. -->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <!-- Ends the div containing the entire form. -->
 
+
+      <div class="wholeForm FormHide3">
+        <form id="formThree">
           <div id="3Question" class="question">
             <h4>Do you prefer to work on visible areas of a program or back end-logic?</h4>
             <p>Front-end or user-side areas of a program are the parts of a webpage or app that a user can see and interact with.  These parts of the program are usually responsible for gathering data from user-input fields and allowing for user interactivity.  People who enjoy this kind of work will like working with layouts and visual images.  Back-end or business logic is the part of the program that the user cannot see.  This type of work involves lots of logic and calculations.</p>
@@ -55,7 +66,13 @@
             </select>
           </div>
           <!-- Ends the third question div. -->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <!-- Ends the div containing the entire form. -->
 
+      <div class="wholeForm FormHide4">
+        <form id="formFour">
           <div id="4Question" class="question">
             <h4>Do you prefer to work on Android or Windows operating systems?</h4>
             <p>Android is a very popular on smart phones, and being able to program for smartphones allows you to reach a wider audience.  This is especially true in the developing world, where a smart phone is the only sourse of net access for many people.  Windows is far more common on desktop computers and is probably the most widely used operating system for both businesses and home users.</p>
@@ -65,7 +82,13 @@
             </select>
           </div>
           <!-- Ends the fourth question div. -->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <!-- Ends the div containing the entire form. -->
 
+      <div class="wholeForm FormHide5">
+        <form id="formFive">
           <div id="5Question" class="question">
             <h4>Would you describe yourself as a very artistic person, or someone who is more tecnical?</h4>
             <p>Some people are free thinkers, some are more technical.  It is all about the right-brain, left-brain dynamic.</p>
@@ -83,13 +106,10 @@
             </div>
           </div>
           <!-- Ends the fifth question div. -->
-
           <button type="submit" class="btn">Submit</button>
         </form>
       </div>
       <!-- Ends the div containing the entire form. -->
-
-
 
       <div class="rubyDiv answerDiv">
         <p>Bassed on the answers you have given, you may be best suited to a career as a Ruby developer.</p>
