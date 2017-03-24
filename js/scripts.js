@@ -1,58 +1,72 @@
 $(document).ready(function() {
+    $("#formName").submit(function(event) {
+      event.preventDefault();
+      var name1Input = $("input#firstname").val();
+      var name2Input = $("input#lastName").val();
+      $(".firstNameSite").text(name1Input + " ");
+      $(".lastNameSite").text(name2Input);
+      $(".FormHide0").fadeToggle(1500);
+      $(".FormHide1").fadeToggle(1500);
+    });
+
     $("#formOne").submit(function(event) {
-      alert("Submission successful!");
       event.preventDefault();
       organizationSizeInput = $("#1Q").val();
+      $(".FormHide1").fadeToggle(1500);
+      $(".FormHide2").fadeToggle(1500);
     });
 
     $("#formTwo").submit(function(event) {
-      alert("Submission successful!");
       event.preventDefault();
       outsideAgencyInput = $("#2Q").val();
+      $(".FormHide2").fadeToggle(1500);
+      $(".FormHide3").fadeToggle(1500);
     });
 
     $("#formThree").submit(function(event) {
-      alert("Submission successful!");
       event.preventDefault();
       whichEndInput = $("#3Q").val();
+      $(".FormHide3").fadeToggle(1500);
+      $(".FormHide4").fadeToggle(1500);
     });
 
     $("#formFour").submit(function(event) {
-      alert("Submission successful!");
       event.preventDefault();
       androidVsWindows = $("#4Q").val();
+      $(".FormHide4").fadeToggle(1500);
+      $(".FormHide5").fadeToggle(1500);
     });
 
-    $("#formFour").submit(function(event) {
-      alert("Submission successful!");
+    $("#formFive").submit(function(event) {
       event.preventDefault();
-      artyVsLogicInput = $("input:radio[name=arty]:checked").val();
+      var artyVsLogicInput = $("input:radio[name=arty]:checked").val();
+      $(".FormHide5").fadeToggle(1500);
+
+      if (artyVsLogicInput == 0){
+        $(".skillSite").text("artistic gifts");
+      } else {
+        $(".skillSite").text("logical thinking");
+      }
 
 
-      //alert(artyVsLogicInput);
-
-      // var thisVar = parseInt($("input:radio[name=orgsize]:checked").val());
-      //if (organizationSizeInput == 0 && whichEndInput == 0){
-      //  $('.cssDiv').show();
-      //}
 
       if (organizationSizeInput == 0) {
         if (whichEndInput == 0){
-          $('.cssDiv').show();
+          $(".cssDiv").fadeToggle(1500);
           return
         } else {
-          $('.rubyDiv').show();
+          $(".rubyDiv").fadeToggle(1500);
           return
         }
       } else {
         if (outsideAgencyInput == 0){
-          $('.phpDiv').show();
+          $(".phpDiv").fadeToggle(1500);
           return
         } else if (androidVsWindows == 0) {
-          $('.javaDiv').show();
+          $(".javaDiv").fadeToggle(1500);
           return
         } else if (androidVsWindows == 1) {
-          $('.cDiv').show();
+          $(".cDiv").fadeToggle(1500);
           return
         }
       } //This ends the else attached to the first if statement
