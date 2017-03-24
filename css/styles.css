@@ -62,6 +62,10 @@ strong {
   padding-left: 250px;
 }
 
+.loading img {
+  width: 150px;
+}
+
 #topbar img {
   height: 140px;
   float: left;
