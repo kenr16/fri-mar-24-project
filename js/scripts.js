@@ -150,6 +150,12 @@ $(document).ready(function() {
         }, delayMillis);
       }
 
+      $(".loading").fadeToggle(1500);
+      var delayMillis = 5000; //5 seconds
+      setTimeout(function() {
+        $(".loading").fadeToggle(1500);
+      }, delayMillis);
+
 
       if (organizationSizeInput == 0) {
         if (whichEndInput == 0){
