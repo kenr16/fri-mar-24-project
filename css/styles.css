@@ -1,0 +1,16 @@
+.question {
+  text-align: center;
+  border: 5px solid blue;
+  border-radius: 20px;
+  height: 250px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.question p {
+  text-indent: 30px;
+}
+
+.answerDiv {
+  display: none;
+}
