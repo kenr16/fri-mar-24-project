@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".hideinit").fadeToggle(1500);
     $("#formName").submit(function(event) {
       event.preventDefault();
       var name1Input = $("input#firstname").val();
@@ -14,6 +15,21 @@ $(document).ready(function() {
       organizationSizeInput = $("#1Q").val();
       $(".FormHide1").fadeToggle(1500);
       $(".FormHide2").fadeToggle(1500);
+
+      if (organizationSizeInput == 0) {
+        $(".q1answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q1answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q1answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q1answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
+
     });
 
     $("#formTwo").submit(function(event) {
@@ -21,6 +37,22 @@ $(document).ready(function() {
       outsideAgencyInput = $("#2Q").val();
       $(".FormHide2").fadeToggle(1500);
       $(".FormHide3").fadeToggle(1500);
+
+      if (outsideAgencyInput == 0) {
+        $(".q2answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q2answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q2answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q2answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
+
+
     });
 
     $("#formThree").submit(function(event) {
@@ -28,6 +60,21 @@ $(document).ready(function() {
       whichEndInput = $("#3Q").val();
       $(".FormHide3").fadeToggle(1500);
       $(".FormHide4").fadeToggle(1500);
+
+      if (whichEndInput == 0) {
+        $(".q3answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q3answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q3answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q3answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
+
     });
 
     $("#formFour").submit(function(event) {
@@ -35,6 +82,20 @@ $(document).ready(function() {
       androidVsWindows = $("#4Q").val();
       $(".FormHide4").fadeToggle(1500);
       $(".FormHide5").fadeToggle(1500);
+
+      if (whichEndInput == 0) {
+        $(".q4answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q4answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q4answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q4answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
     });
 
     $("#formFive").submit(function(event) {

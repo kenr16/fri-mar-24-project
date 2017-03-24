@@ -8,23 +8,50 @@
     <meta charset="utf-8">
     <title>Which course is right for you?</title>
   </head>
-  <body>
+  <body class="hideinit">
+      <!-- This div starts the topbar. -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="topbar">
+            <img src="img/logo.png">
+            <h1>Programming Track Selector</h1>
+            <h3><em>Which programming course is right for you?</em></h3>
+          </div>
+        </div>
+      </div>
+      <!-- This div ends the topbar. -->
+
+    <div id="background">
+      <img src="img/background2.jpg" class="stretch" alt="" />
+    </div>
+
+
+
+
     <div class="container">
 
 
-      <h1>Which programming course is right for you?</h1>
-      <h4>Here are some options for programming courses that you can take:</h4>
-      <ul id="thelist">
-        <li>Ruby</li>
-        <li>PHP</li>
-        <li>Java</li>
-        <li>C#</li>
-      </ul>
-      <p>It is important to remember that there is no right or wrong choice when it comes to programming languages.  Each one has its own strengths and weaknesses.</p>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Courses at Epicodus</h2>
+        </div>
+        <div class="panel-body">
+          <h4>Here are some options for programming courses that you can take:</h4>
+          <ul id="thelist">
+            <li>Ruby</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>C#</li>
+          </ul>
+          <div class="panel-footer">It is important to remember that there is no <strong>right</strong> or <strong>wrong</strong> choice when it comes to programming languages.  Each one has its own strengths and weaknesses.</div>
+        </div>
+      </div>
+
 
       <div class="wholeForm FormHide0">
         <form id="formName">
           <div class="form-group">
+            <p>First lets find out a little bit about you!</p>
             <label for="firstname">Your First Name</label>
             <input id="firstname" class="form-control" type="text">
           </div>
@@ -32,7 +59,7 @@
             <label for="lastName">Your Last Name</label>
             <input id="lastName" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn">Place my order!</button>
+          <button type="submit" class="btn">Lets begin!</button>
         </form>
       </div>
 
@@ -152,6 +179,46 @@
       <div class="cDiv answerDiv">
         <h2>C# Developer</h2>
         <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a C# developer.  Epicodus currently offers a course that gives training in both C# and .NET framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+      </div>
+
+      <div class="q1answer1 answerDiv responseDiv">
+        <h2>First Answer</h2>
+        <p>You have indicated that you prefer smaller businesses.</p>
+      </div>
+
+      <div class="q1answer2 answerDiv responseDiv">
+        <h2>First Answer</h2>
+        <p>You have indicated that you prefer larger businesses.</p>
+      </div>
+
+      <div class="q2answer1 answerDiv responseDiv">
+        <h2>Second Answer</h2>
+        <p>You have indicated that you prefer to work as an outside contractor.</p>
+      </div>
+
+      <div class="q2answer2 answerDiv responseDiv">
+        <h2>Second Answer</h2>
+        <p>You have indicated that you prefer to work for companies directly.</p>
+      </div>
+
+      <div class="q3answer1 answerDiv responseDiv">
+        <h2>Third Answer</h2>
+        <p>You have indicated that you prefer to work on front-end development.</p>
+      </div>
+
+      <div class="q3answer2 answerDiv responseDiv">
+        <h2>Third Answer</h2>
+        <p>You have indicated that you prefer to work on back-end development.</p>
+      </div>
+
+      <div class="q4answer1 answerDiv responseDiv">
+        <h2>Fourth Answer</h2>
+        <p>You have indicated that you prefer to work on Android.</p>
+      </div>
+
+      <div class="q4answer2 answerDiv responseDiv">
+        <h2>Fourth Answer</h2>
+        <p>You have indicated that you prefer to work on Windows.</p>
       </div>
 
     </div>
