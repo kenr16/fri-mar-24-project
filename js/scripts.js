@@ -102,6 +102,7 @@ $(document).ready(function() {
       event.preventDefault();
       var artyVsLogicInput = $("input:radio[name=arty]:checked").val();
       $(".FormHide5").fadeToggle(1500);
+      $(".FormHide6").fadeToggle(1500);
 
       if (artyVsLogicInput == 0){
         $(".skillSite").text("artistic gifts");
@@ -109,6 +110,45 @@ $(document).ready(function() {
         $(".skillSite").text("logical thinking");
       }
 
+      if (artyVsLogicInput == 0) {
+        $(".q5answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q5answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q5answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q5answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
+    });
+
+    $("#formSix").submit(function(event) {
+      event.preventDefault();
+      var socialInput = $("input:radio[name=social]:checked").val();
+      $(".FormHide6").fadeToggle(1500);
+
+      if (socialInput == 0){
+        $(".socialSite").text("outgoing and sociable nature.");
+      } else {
+        $(".socialSite").text("highly focused determination.");
+      }
+
+      if (socialInput == 0) {
+        $(".q6answer1").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q6answer1").fadeToggle(1500);
+        }, delayMillis);
+      } else {
+        $(".q6answer2").fadeToggle(1500);
+        var delayMillis = 3000; //1 second
+        setTimeout(function() {
+          $(".q6answer2").fadeToggle(1500);
+        }, delayMillis);
+      }
 
 
       if (organizationSizeInput == 0) {

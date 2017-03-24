@@ -51,7 +51,8 @@
       <div class="wholeForm FormHide0">
         <form id="formName">
           <div class="form-group">
-            <p>First lets find out a little bit about you!</p>
+            <h4>First lets find out a little bit about you!</h4>
+            <hr>
             <label for="firstname">Your First Name</label>
             <input id="firstname" class="form-control" type="text">
           </div>
@@ -67,6 +68,7 @@
         <form id="formOne">
           <div id="1Question" class="question">
             <h4>Do you prefer to work with small or large business organizations?</h4>
+            <hr>
             <p>Large businesses may have a more structured enviroment in which some people thrive, they also offer far more stability.  However, a smaller business will be more flexible and may offer more opportunities for faster growth.  Finding an enviroment in which you can thrive may be beneficial to your career.</p>
             <select class="form-control" id="1Q">
               <option value="0">Small businesses better suit me.</option>
@@ -83,6 +85,7 @@
         <form id="formTwo">
           <div id="2Question" class="question">
             <h4>Do you prefer to work for a large organization directly, or work as an outside contractor?</h4>
+            <hr>
             <p>Working directly for a large organization will once again offer far more structure, stability and usually a very steady stream of work.  Working as an outside contractor or for an agency will allow you more freedom to choose which projects you will work on and may offer better pay, if less consistently.</p>
             <select class="form-control" id="2Q">
               <option value="0">I prefer to work as an outside contractor or for an agency.</option>
@@ -100,6 +103,7 @@
         <form id="formThree">
           <div id="3Question" class="question">
             <h4>Do you prefer to work on visible areas of a program or back end-logic?</h4>
+            <hr>
             <p>Front-end or user-side areas of a program are the parts of a webpage or app that a user can see and interact with.  These parts of the program are usually responsible for gathering data from user-input fields and allowing for user interactivity.  People who enjoy this kind of work will like working with layouts and visual images.  Back-end or business logic is the part of the program that the user cannot see.  This type of work involves lots of logic and calculations.</p>
             <select class="form-control" id="3Q">
               <option value="0">Front-end</option>
@@ -116,6 +120,7 @@
         <form id="formFour">
           <div id="4Question" class="question">
             <h4>Do you prefer to work on Android or Windows operating systems?</h4>
+            <hr>
             <p>Android is a very popular on smart phones, and being able to program for smartphones allows you to reach a wider audience.  This is especially true in the developing world, where a smart phone is the only sourse of net access for many people.  Windows is far more common on desktop computers and is probably the most widely used operating system for both businesses and home users.</p>
             <select class="form-control" id="4Q">
               <option value="0">Android</option>
@@ -132,6 +137,7 @@
         <form id="formFive">
           <div id="5Question" class="question">
             <h4>Would you describe yourself as a very artistic person, or someone who is more tecnical?</h4>
+            <hr>
             <p>Some people are free thinkers, some are more technical.  It is all about the right-brain, left-brain dynamic.</p>
             <div class="radio">
               <label>
@@ -152,33 +158,58 @@
       </div>
       <!-- Ends the div containing the entire form. -->
 
+      <div class="wholeForm FormHide6">
+        <form id="formSix">
+          <div id="6Question" class="question">
+            <h4>Would you describe yourself as more of an introvert or an extrovert?</h4>
+            <hr>
+            <p>Some people are more outgoing and require constant social interaction.  Others can be highly focused and motivated on their own.  Both have advantages and disadvantages.</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="social" value="0" checked>
+                I am more of an extrovert.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="social" value="1">
+                I am more of an introvert.
+              </label>
+            </div>
+          </div>
+          <!-- Ends the fifth question div. -->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <!-- Ends the div containing the entire form. -->
+
 
 
 
 
       <div class="rubyDiv answerDiv">
         <h2>Ruby Developer</h2>
-        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a Ruby developer.  Epicodus currently offers a course that gives training in both Ruby and Rails framework for a potential future career as a web developer, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a Ruby developer.  Epicodus currently offers a course that gives training in both Ruby and Rails framework for a potential future career as a web developer, where your <span class="skillSite"></span> will no-doubt serve you very well!  You will most likely do well at this job due to your <span class="socialSite"></span>.</p>
       </div>
 
       <div class="cssDiv answerDiv">
         <h2>CSS Developer</h2>
-        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a CSS developer.  Epicodus currently offers a course that gives training in both CSS and design elelments for a potential future career as a webpage designer, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a CSS developer.  Epicodus currently offers a course that gives training in both CSS and design elelments for a potential future career as a webpage designer, where your <span class="skillSite"></span> will no-doubt serve you very well!  You will most likely do well at this job due to your <span class="socialSite"></span>.</p>
       </div>
 
       <div class="phpDiv answerDiv">
         <h2>PHP Developer</h2>
-        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a PHP developer.  Epicodus currently offers a course that gives training in both PHP and Drupal framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a PHP developer.  Epicodus currently offers a course that gives training in both PHP and Drupal framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!  You will most likely do well at this job due to your <span class="socialSite"></span>.</p>
       </div>
 
       <div class="javaDiv answerDiv">
         <h2>Java Developer</h2>
-        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a Java developer.  Epicodus currently offers a course that gives training in both Java and Android framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a Java developer.  Epicodus currently offers a course that gives training in both Java and Android framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!  You will most likely do well at this job due to your <span class="socialSite"></span>.</p>
       </div>
 
       <div class="cDiv answerDiv">
         <h2>C# Developer</h2>
-        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a C# developer.  Epicodus currently offers a course that gives training in both C# and .NET framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!</p>
+        <p>Good afternoon <span class="firstNameSite"></span><span class="lastNameSite"></span>!  Based on the answers you have given, you may be best suited to a career as a C# developer.  Epicodus currently offers a course that gives training in both C# and .NET framework for a potential future career as a coder, where your <span class="skillSite"></span> will no-doubt serve you very well!  You will most likely do well at this job due to your <span class="socialSite"></span>.</p>
       </div>
 
       <div class="q1answer1 answerDiv responseDiv">
@@ -221,10 +252,30 @@
         <p>You have indicated that you prefer to work on Windows.</p>
       </div>
 
+      <div class="q5answer1 answerDiv responseDiv">
+        <h2>Fifth Answer</h2>
+        <p>You have indicated that you are more artistic.</p>
+      </div>
+
+      <div class="q5answer2 answerDiv responseDiv">
+        <h2>Fifth Answer</h2>
+        <p>You have indicated that you are more logical.</p>
+      </div>
+
+      <div class="q6answer1 answerDiv responseDiv">
+        <h2>Sixth Answer</h2>
+        <p>You have indicated that you are more of an extrovert.</p>
+      </div>
+
+      <div class="q6answer2 answerDiv responseDiv">
+        <h2>Sixth Answer</h2>
+        <p>You have indicated that you are more of an introvert.</p>
+      </div>
+
     </div>
     <!-- Ends the container div. -->
   </body>
-
+</html>
 
 
 
