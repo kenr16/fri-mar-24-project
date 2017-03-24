@@ -9,6 +9,9 @@
 _This is a program that will ask you a series of question on your preferences and then select which course at Epicodus in portland it feels is the best fit for you personally and professionally.  It requires the use of multiple input forms and the use of global variables, which, although frowned upon, are actually put to very good use here.  Once the questions have all been answered, a final suggestion will be made on which track is right for you.
 The complete repository can be found on GitHub at the following address:_
 https://github.com/kenr16/fri-mar-24-project
+And a direct link to the visible website can be had at:
+https://kenr16.github.io/fri-mar-24-project/
+
 
 ## Setup/Installation Requirements
 
