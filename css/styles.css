@@ -16,7 +16,12 @@ body {
   font-family: sans-serif;
 }
 
+strong {
+  color: red;
+}
+
 .panel {
+  margin-left: 5%;
   margin-top: 200px;
   padding: 0px;
   color: black;
@@ -35,7 +40,7 @@ body {
   border-style: solid;
   border-bottom: thick solid #29a3a3;
   border-width: 0px 0px 25px 0px;
-  height: 170px;
+  height: 180px;
   position: absolute;
   z-index: 1;
 }
@@ -71,6 +76,11 @@ body {
   left: 0px;
   top: 0px;
   z-index: -4; /* Ensure div tag stays behind content*/
+}
+
+#background img {
+  width: 100%;
+  height: 100%;
 }
 
 .wholeForm {
